@@ -1,18 +1,13 @@
 {
-  "name": "SmallAlgos",
+  "name": "smallalgos",
   "author": "thibaultCha",
   "version": "0.0.1",
   "description": "Some algorithms",
   "private": true,
   "scripts": {
-    "test": "make test",
-    "blanket": {
-      "pattern": "lib",
-      "data-cover-never": "node_modules"
-    }
+    "test": "make test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "*",
     "should": "*"

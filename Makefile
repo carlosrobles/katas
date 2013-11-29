@@ -1,6 +1,7 @@
+BIN = ./node_modules/.bin
 REPORTER = spec
 
 test:
-	./node_modules/.bin/mocha --reporter $(REPORTER)
+	@NODE_ENV=test $(BIN)/mocha --reporter $(REPORTER)
 
 .PHONY: test
