@@ -27,25 +27,25 @@ describe('Array', function () {
 	})
 
 	describe('bubbleSort', function () {
-		var arr = [3, 4, -3, 2, -9]
 		it('should sort an array', function () {
-			array.bubbleSort(arr).should.eql([-9, -3, 2, 3, 4])
+			array.bubbleSort([3, 4, -3, 2, -9]).should.eql([-9, -3, 2, 3, 4])
 		})
 	})
 
 	describe('reverse', function () {
-		var arr1 = "hello"
-		, arr2   = "foobar"
 		it('should reverse an array', function () {
-			array.reverse(arr1.split('')).should.eql("olleh".split(''))
-			array.reverse(arr2.split('')).should.eql("raboof".split(''))
+			array.reverse("hello".split('')).should.eql("olleh".split(''))
+			array.reverse("foobar".split('')).should.eql("raboof".split(''))
 		})
 	})
 
 	describe('maxIntNotIn', function () {
-		var arr1 = [5, 2, 3, 9, 6]
 		it('should return the biggest value in an array of positive integers', function () {
-			array.maxIntNotIn(arr).should.equal(9)
+			array.maxIntNotIn([5, 2, 3, 9, 6]).should.equal(8)
+			array.maxIntNotIn([2, 3, 4, 5, 6]).should.equal(1)
+		})
+		it('should return -1 if the array is complete from 0 to max', function () {
+			array.maxIntNotIn([0,1,2,3,4,5]).should.equal(-1)
 		})
 	})
 
