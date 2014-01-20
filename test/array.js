@@ -43,7 +43,10 @@ describe('Array', function () {
 	})
 
 	describe('maxIntNotIn', function () {
-
+		var arr1 = [5, 2, 3, 9, 6]
+		it('should return the biggest value in an array of positive integers', function () {
+			array.maxIntNotIn(arr).should.equal(9)
+		})
 	})
 
 })
