@@ -18,22 +18,27 @@ describe('Array', function () {
 	})
 
 	describe('maxContiguousSum', function () {
-		var arr = [3, -4, 8, 7, -10, 19, -3]
+		var arr1 = [3, -4, 8, 7, -10, 19, -3]
+		var arr2 = [2, -3, -3, 9, -29, 8, -9]
 		it('should return the max contiguous sum', function () {
-			array.maxContiguousSum(arr).should.equal(24)
+			array.maxContiguousSum(arr1).should.equal(24)
+			array.maxContiguousSum(arr2).should.equal(9)
 		})
 	})
 
 	describe('bubbleSort', function () {
-		
+		var arr = [3, 4, -3, 2, -9]
+		it('should sort an array', function () {
+			array.bubbleSort(arr).should.eql([-9, -3, 2, 3, 4])
+		})
 	})
 
 	describe('reverse', function () {
-		
+
 	})
 
 	describe('maxIntNotIn', function () {
-		
+
 	})
 
 })
