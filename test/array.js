@@ -23,6 +23,14 @@ describe('Array', function () {
 		it('should return the max contiguous sum', function () {
 			array.maxContiguousSum(arr1).should.equal(24)
 			array.maxContiguousSum(arr2).should.equal(9)
+			array.maxContiguousSum([1, 2, 3, -8, 3, 3, 4, -2, 7, -2]).should.equal(15)
+			array.maxContiguousSum([-8, 1, 7, -2, -3, 4, -2, 5]).should.equal(10)
+			array.maxContiguousSum([-8, -10, -12, -2, -3, -4, -2]).should.equal(0)
+			array.maxContiguousSum([7, -7, 8, -2, 3, -2, 1, -1]).should.equal(9)
+			array.maxContiguousSum([-2, -1, 4, -2, 2, 3, -2]).should.equal(7)
+			array.maxContiguousSum([32, -11, -56, 78, -8, 1, -2]).should.equal(78)
+			array.maxContiguousSum([-10, 8, 3, -100, 23, 12, 56]).should.equal(91)
+			array.maxContiguousSum([58, 10, -32, -22, 3, -4, 34]).should.equal(68)
 		})
 	})
 
