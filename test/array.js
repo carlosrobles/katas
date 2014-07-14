@@ -87,5 +87,4 @@ describe('Array', function () {
 			array.pickPeaks([1,1,1,1]).should.eql({"pos":[],"peaks":[]})
 		})
 	})
-
 })
