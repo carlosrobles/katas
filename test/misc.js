@@ -43,6 +43,18 @@ describe('Misc', function() {
   })
 
   describe('lookAndSay', function () {
-
+    it('should return -1 if argument is < 0', function () {
+      misc.lookAndSay(-2).should.equal(-1)
+    })
+    it('should return -1 is argument isNaN or empty string', function () {
+      misc.lookAndSay(" ").should.equal(-1)
+      misc.lookAndSay("").should.equal(-1)
+    })
+    it('should return a string matching the "lookAndSay" algorithm', function () {
+      misc.lookAndSay(2).should.equal("1,11")
+      misc.lookAndSay(3).should.equal("1,11,21")
+      misc.lookAndSay(5).should.equal("1,11,21,1211,111221")
+      misc.lookAndSay(6).should.equal("1,11,21,1211,111221,312211")
+    })
   })
 })
